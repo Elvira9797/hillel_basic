@@ -1,0 +1,36 @@
+.container {
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas: "leftSideBar myHeader myHeader" "leftSideBar myAside myArticle" "myFooter myFooter myFooter";
+  gap: 20px;
+}
+.container > * {
+  padding: 3px;
+}
+
+header {
+  grid-area: myHeader;
+  background: pink;
+}
+
+article {
+  grid-area: myArticle;
+  background: blue;
+}
+
+aside {
+  grid-area: myAside;
+  background: green;
+}
+
+footer {
+  grid-area: myFooter;
+  background: gray;
+}
+
+.leftSideBar {
+  grid-area: leftSideBar;
+  background: yellow;
+}
+
+/*# sourceMappingURL=style.css.map */

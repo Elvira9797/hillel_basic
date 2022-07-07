@@ -1,0 +1,43 @@
+.container
+	display: grid
+	grid-auto-rows: minmax(100px, auto)
+	grid-template-areas: "leftSideBar myHeader myHeader" "leftSideBar myAside myArticle" "myFooter myFooter myFooter"
+	gap: 20px
+	>*
+		padding: 3px
+		// border: 2px solid blue
+		// height: 100px
+		// margin: 10px
+
+header
+	// grid-column: 1/3
+	// grid-row: 1
+	grid-area: myHeader
+	background: pink
+
+article
+	// grid-column: 2
+	// grid-row: 2
+	grid-area: myArticle
+	background: blue
+
+aside
+	// grid-column: 1
+	// grid-row: 2
+	grid-area: myAside
+	background: green
+
+footer
+	// grid-column: 1/3
+	// grid-row: 3
+	grid-area: myFooter
+	background: gray
+
+.leftSideBar
+	grid-area: leftSideBar
+	background: yellow
+
+
+
+
+
