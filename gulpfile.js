@@ -7,19 +7,19 @@ var gulp = require('gulp'),
 gulp.task('html', function () {
    return gulp.src('src/*.html')
          .pipe(rigger())
-         .pipe(gulp.dest('dist/'));
+         .pipe(gulp.dest('dist/src'));
 });
 
 gulp.task('css', function () {
    return  gulp.src('src/css/*.css')
            .pipe(prefixer())
            .pipe(cssmin())
-           .pipe(gulp.dest('./dist/css/'));
+           .pipe(gulp.dest('./dist/src/css/'));
 });
 
 gulp.task('images', function () {
    return gulp.src('src/images/*')
-      .pipe(gulp.dest('./dist/images'));
+      .pipe(gulp.dest('./dist/src/images'));
 });
 
 gulp.task('watch', function(){
