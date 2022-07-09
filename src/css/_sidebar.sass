@@ -1,2 +1,39 @@
 .sidebar
 	background: $dark--bg
+	&__header
+		display: flex
+		align-items: center
+		padding: 37px 32px 60px 32px
+		box-sizing: border-box
+		color: gray
+
+h2
+	margin-left: 10px
+
+.menu__link
+	border: none
+	width: 100%
+	padding: 20px 29px
+	text-align: left
+	display: flex
+	align-items: center
+	background: transparent
+	color: gray
+	cursor: pointer
+	border-left: 2px solid transparent
+	transition: 0.2s
+	&--active, &:hover
+		background: #9fa2843b
+		border-left: 2px solid green
+		color: green
+	svg
+		width: 15px
+		height: 15px
+		margin-right: 10px
+		path
+			fill: gray
+
+
+
+
+
